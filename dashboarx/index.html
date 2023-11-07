@@ -9,8 +9,8 @@
 
     <!-- Font Icon -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto&family=Satisfy&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Satisfy&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css">
     <link rel="stylesheet" href="vendor/nouislider/nouislider.min.css">
 
@@ -22,7 +22,7 @@
     <div class="home">
         <div class="home-header">
             <header data-thq="thq-navbar" class="home-navbar-interactive">
-                <span class="home-logo">Gen<i class="fa-brands fa-x-twitter">x</i> Report</span>
+                <span onclick="window.location = ''" style="cursor : pointer;" class="home-logo">Gen<i class="fa-brands fa-x-twitter">x</i> Report</span>
                 <div data-thq="thq-navbar-nav" class="home-desktop-menu">
                     <nav class="home-links">
                         <span>About</span>
@@ -56,11 +56,20 @@
                             </div>
                         </div>
                         <nav class="home-links1">
-                            <span class="home-nav11">About</span>
-                            <span class="home-nav21">Features</span>
-                            <span class="home-nav31">Pricing</span>
-                            <span class="home-nav41">Team</span>
-                            <span class="home-nav51">Blog</span>
+                            <nav class="home-links1">
+                                <span class="home-nav11">
+                                    <a href = "" style="text-decoration: none; color: purple">About</a>
+                                </span>
+                                <span class="home-nav21">
+                                    <a href = "" style="text-decoration: none; color: purple">Features</a>
+                                </span>
+                                <span class="home-nav31">
+                                    <a href = "" style="text-decoration: none; color: purple">Pricing</a>
+                                </span>
+                                <span class="home-nav41">
+                                    <a href = "" style="text-decoration: none; color: purple">Team</a>
+                                </span>
+                            </nav>
                         </nav>
                         <div class="home-buttons1">
                             <button class="home-login1 button">Login</button>
@@ -87,11 +96,63 @@
         </div>
     </div>
     <main>
-        <div class="box"><a href = "../investor/index.html">Investor Report</a></div>
-        <div class="box"><a href = "../financial/index.html">Financial Report</a></div>
-        <div class="box"><a href = "../HR/index.html">HR Report</a></div>
-        <div class="box"><a href = "../analytics/index.html">Analytics Report</a></div>
-        <div class="box"><a href = "../logistical/index.html">Logistical Report</a></div>
+        <div class="box">
+            <span class="tb">
+                <svg xmlns="http://www.w3.org/2000/svg" height="1em"
+                    viewBox="0 0 384 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                    <path
+                        d="M32 32C32 14.3 46.3 0 64 0H320c17.7 0 32 14.3 32 32s-14.3 32-32 32H290.5l11.4 148.2c36.7 19.9 65.7 53.2 79.5 94.7l1 3c3.3 9.8 1.6 20.5-4.4 28.8s-15.7 13.3-26 13.3H32c-10.3 0-19.9-4.9-26-13.3s-7.7-19.1-4.4-28.8l1-3c13.8-41.5 42.8-74.8 79.5-94.7L93.5 64H64C46.3 64 32 49.7 32 32zM160 384h64v96c0 17.7-14.3 32-32 32s-32-14.3-32-32V384z" />
+                </svg>
+            </span>
+            <a class = "a" href="../investor/index.html">Investor Report</a>
+        </div>
+        <div class="box">
+            <span class="tb">
+                <svg xmlns="http://www.w3.org/2000/svg" height="1em"
+                    viewBox="0 0 384 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                    <path
+                        d="M32 32C32 14.3 46.3 0 64 0H320c17.7 0 32 14.3 32 32s-14.3 32-32 32H290.5l11.4 148.2c36.7 19.9 65.7 53.2 79.5 94.7l1 3c3.3 9.8 1.6 20.5-4.4 28.8s-15.7 13.3-26 13.3H32c-10.3 0-19.9-4.9-26-13.3s-7.7-19.1-4.4-28.8l1-3c13.8-41.5 42.8-74.8 79.5-94.7L93.5 64H64C46.3 64 32 49.7 32 32zM160 384h64v96c0 17.7-14.3 32-32 32s-32-14.3-32-32V384z" />
+                </svg>
+            </span><a class = "a" href="../financial/index.html">Financial Report</a>
+        </div>
+        <div class="box">
+            <span class="tb">
+                <svg xmlns="http://www.w3.org/2000/svg" height="1em"
+                    viewBox="0 0 384 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                    <path
+                        d="M32 32C32 14.3 46.3 0 64 0H320c17.7 0 32 14.3 32 32s-14.3 32-32 32H290.5l11.4 148.2c36.7 19.9 65.7 53.2 79.5 94.7l1 3c3.3 9.8 1.6 20.5-4.4 28.8s-15.7 13.3-26 13.3H32c-10.3 0-19.9-4.9-26-13.3s-7.7-19.1-4.4-28.8l1-3c13.8-41.5 42.8-74.8 79.5-94.7L93.5 64H64C46.3 64 32 49.7 32 32zM160 384h64v96c0 17.7-14.3 32-32 32s-32-14.3-32-32V384z" />
+                </svg>
+            </span><a class = "a" href="../HR/index.html">HR Report</a>
+        </div>
+        <div class="box">
+            <span class="tb">
+                <svg xmlns="http://www.w3.org/2000/svg" height="1em"
+                    viewBox="0 0 384 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                    <path
+                        d="M32 32C32 14.3 46.3 0 64 0H320c17.7 0 32 14.3 32 32s-14.3 32-32 32H290.5l11.4 148.2c36.7 19.9 65.7 53.2 79.5 94.7l1 3c3.3 9.8 1.6 20.5-4.4 28.8s-15.7 13.3-26 13.3H32c-10.3 0-19.9-4.9-26-13.3s-7.7-19.1-4.4-28.8l1-3c13.8-41.5 42.8-74.8 79.5-94.7L93.5 64H64C46.3 64 32 49.7 32 32zM160 384h64v96c0 17.7-14.3 32-32 32s-32-14.3-32-32V384z" />
+                </svg>
+            </span><a class = "a" href="../analytics/index.html">Analytics Report</a>
+        </div>
+        <div class="box">
+            <span class="tb">
+                <svg xmlns="http://www.w3.org/2000/svg" height="1em"
+                    viewBox="0 0 384 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                    <path
+                        d="M32 32C32 14.3 46.3 0 64 0H320c17.7 0 32 14.3 32 32s-14.3 32-32 32H290.5l11.4 148.2c36.7 19.9 65.7 53.2 79.5 94.7l1 3c3.3 9.8 1.6 20.5-4.4 28.8s-15.7 13.3-26 13.3H32c-10.3 0-19.9-4.9-26-13.3s-7.7-19.1-4.4-28.8l1-3c13.8-41.5 42.8-74.8 79.5-94.7L93.5 64H64C46.3 64 32 49.7 32 32zM160 384h64v96c0 17.7-14.3 32-32 32s-32-14.3-32-32V384z" />
+                </svg>
+            </span><a class = "a" href="../logistical/index.html">Logistical Report</a>
+        </div>
+        <script>
+            const boxes = document.querySelectorAll('.a');
+
+            boxes.forEach(box => {
+                box.addEventListener("mousemove", (e) => {
+                    const { x, y } = box.getBoundingClientRect();
+                    box.style.setProperty("--x", e.clientX - x);
+                    box.style.setProperty("--y", e.clientY - y);
+                });
+            })
+        </script>
     </main>
     <footer class="footer">
         <div class="bubbles">
@@ -100,7 +161,8 @@
         <div class="footer-content">
             <div class="footer-section about">
                 <div class="about-logo">
-                    <img src="./genx.PNG" style="background-color: #329e5e;  height: 2rem; width: 250px;" alt="Your Logo">
+                    <img src="./genx.PNG" style="background-color: #329e5e;  height: 2rem; width: 250px;"
+                        alt="Your Logo">
                 </div>
                 <p style="display: flex; flex-direction: row; justify-content: center; align-items: center;">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore
@@ -108,7 +170,7 @@
             </div>
         </div>
         <div class="footer-bottom">
-            &copy; 2023 
+            &copy; 2023
         </div>
     </footer>
     <svg style="position: fixed; top: 100vh;">

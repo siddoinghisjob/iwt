@@ -19,7 +19,7 @@
     <div class="">
         <div class="home-header">
             <header data-thq="thq-navbar" class="home-navbar-interactive">
-                <span class="home-logo">Gen<i class="fa-brands fa-x-twitter">x</i> Report</span>
+                <span onclick="window.location = '../dashboarx/index.html'" style="cursor : pointer;" class="home-logo">Gen<i class="fa-brands fa-x-twitter">x</i> Report</span>
                 <div data-thq="thq-navbar-nav" class="home-desktop-menu">
                     <nav class="home-links">
                         <span>About</span>
@@ -53,11 +53,20 @@
                             </div>
                         </div>
                         <nav class="home-links1">
-                            <span class="home-nav11">About</span>
-                            <span class="home-nav21">Features</span>
-                            <span class="home-nav31">Pricing</span>
-                            <span class="home-nav41">Team</span>
-                            <span class="home-nav51">Blog</span>
+                            <nav class="home-links1">
+                                <span class="home-nav11">
+                                    <a href = "" style="text-decoration: none; color: purple">About</a>
+                                </span>
+                                <span class="home-nav21">
+                                    <a href = "" style="text-decoration: none; color: purple">Features</a>
+                                </span>
+                                <span class="home-nav31">
+                                    <a href = "" style="text-decoration: none; color: purple">Pricing</a>
+                                </span>
+                                <span class="home-nav41">
+                                    <a href = "" style="text-decoration: none; color: purple">Team</a>
+                                </span>
+                            </nav>
                         </nav>
                         <div class="home-buttons1">
                             <button class="home-login1 button">Login</button>
@@ -153,6 +162,14 @@
                                     </div>
                                 </div>
                                 <div class="form-input">
+                                    <label for="first_name" class="required">Objective</label>
+                                    <input type="text" name="first_name" id="obj" />
+                                </div>
+                                <div class="form-input">
+                                    <label for="email" class="required">Goal</label>
+                                    <input type="text" name="email" id="goal" />
+                                </div>
+                                <div class="form-input">
                                     <label for="payable">Regions</label>
                                     <input type="text" name="payable" id="payable" />
                                 </div>
@@ -166,7 +183,8 @@
                             </div>
                         </div>
                         <div class="form-submit">
-                            <input type="submit" value="Submit" class="submit" id="submit" name="submit" />
+                            <input type="button" onclick="handleSubmit();" value="Submit" class="submit" id="submit"
+                                name="submit" />
                             <input type="submit" value="Reset" class="submit" id="reset" name="reset" />
                         </div>
                     </form>
@@ -191,7 +209,8 @@
         <div class="footer-content">
             <div class="footer-section about">
                 <div class="about-logo">
-                    <img src="./images/genx.PNG" style="background-color: #329e5e;  height: 2rem; width: 250px;" alt="Your Logo">
+                    <img src="./images/genx.PNG" style="background-color: #329e5e;  height: 2rem; width: 250px;"
+                        alt="Your Logo">
                 </div>
                 <p style="display: flex; flex-direction: row; justify-content: center; align-items: center;">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore
@@ -199,7 +218,7 @@
             </div>
         </div>
         <div class="footer-bottom">
-            &copy; 2023 
+            &copy; 2023
         </div>
     </footer>
     <svg style="position: fixed; top: 100vh;">
@@ -212,5 +231,12 @@
         </defs>
     </svg>
 </body>
+<script>
+    function handleSubmit() {
+        const obj = document.getElementById('obj').value;
+        const goal = document.getElementById('goal').value;
+        window.location = "../charts/index.html?o=" + obj + "&g=" + goal + "&t=Analytics Report&l1=Users&l2=Month";
+    }
+</script>
 
 </html>

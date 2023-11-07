@@ -19,7 +19,7 @@
     <div class="">
         <div class="home-header">
             <header data-thq="thq-navbar" class="home-navbar-interactive">
-                <span class="home-logo">Gen<i class="fa-brands fa-x-twitter">x</i> Report</span>
+                <span onclick="window.location = '../dashboarx/index.html'" style="cursor : pointer;" class="home-logo">Gen<i class="fa-brands fa-x-twitter">x</i> Report</span>
                 <div data-thq="thq-navbar-nav" class="home-desktop-menu">
                     <nav class="home-links">
                         <span>About</span>
@@ -53,11 +53,20 @@
                             </div>
                         </div>
                         <nav class="home-links1">
-                            <span class="home-nav11">About</span>
-                            <span class="home-nav21">Features</span>
-                            <span class="home-nav31">Pricing</span>
-                            <span class="home-nav41">Team</span>
-                            <span class="home-nav51">Blog</span>
+                            <nav class="home-links1">
+                                <span class="home-nav11">
+                                    <a href = "" style="text-decoration: none; color: purple">About</a>
+                                </span>
+                                <span class="home-nav21">
+                                    <a href = "" style="text-decoration: none; color: purple">Features</a>
+                                </span>
+                                <span class="home-nav31">
+                                    <a href = "" style="text-decoration: none; color: purple">Pricing</a>
+                                </span>
+                                <span class="home-nav41">
+                                    <a href = "" style="text-decoration: none; color: purple">Team</a>
+                                </span>
+                            </nav>
                         </nav>
                         <div class="home-buttons1">
                             <button class="home-login1 button">Login</button>
@@ -95,7 +104,7 @@
                     </div>
                 </div>
                 <div class="signup-form">
-                    <form method="POST" class="register-form" id="register-form">
+                    <form method="POST" onsubmit="handleSubmit();" class="register-form" id="register-form">
                         <div class="form-row">
                             <div class="form-group">
                                 <div class="form-input">
@@ -107,16 +116,16 @@
                                     <input type="text" name="last_name" id="last_name" />
                                 </div>
                                 <div class="form-input">
-                                    <label for="company" class="required">Financier ID</label>
-                                    <input type="text" name="company" id="company" />
-                                </div>
-                                <div class="form-input">
                                     <label for="email" class="required">Email</label>
                                     <input type="text" name="email" id="email" />
                                 </div>
+                               <div class="form-input">
+                                    <label for="company" class="required">Goal</label>
+                                    <input type="text" name="company" id="goal" />
+                                </div>
                                 <div class="form-input">
-                                    <label for="Juridistion" class="required">Juridistion</label>
-                                    <input type="text" name="Juridistion" id="Juridistion" />
+                                    <label for="Juridistion" class="required">Objective</label>
+                                    <input type="text" name="Juridistion" id="obj" />
                                 </div>
                             </div>
                             <div class="form-group">
@@ -178,7 +187,7 @@
                             </div>
                         </div>
                         <div class="form-submit">
-                            <input type="submit" value="Submit" class="submit" id="submit" name="submit" />
+                            <input type="button" onclick="handleSubmit();" value="Submit" class="submit" id="submit" name="submit" />
                             <input type="submit" value="Reset" class="submit" id="reset" name="reset" />
                         </div>
                     </form>
@@ -224,5 +233,11 @@
         </defs>
     </svg>
 </body>
-
+<script>
+    function handleSubmit(){
+        const obj = document.getElementById('obj').value;
+        const goal = document.getElementById('goal').value;
+        window.location = "../charts/index.html?o="+obj+"&g="+goal+"&t=Finance Form&l1=Equity&l2=Debt";
+    }
+</script>
 </html>

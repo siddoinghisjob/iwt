@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>HR Report Geneartion Form</title>
+    <title>Financial Report Geneartion Form</title>
 
     <!-- Font Icon -->
     <link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css">
@@ -19,7 +19,7 @@
     <div class="">
         <div class="home-header">
             <header data-thq="thq-navbar" class="home-navbar-interactive">
-                <span class="home-logo">Gen<i class="fa-brands fa-x-twitter">x</i> Report</span>
+                <span onclick="window.location = '../dashboarx/index.html'" style="cursor : pointer;" class="home-logo">Gen<i class="fa-brands fa-x-twitter">x</i> Report</span>
                 <div data-thq="thq-navbar-nav" class="home-desktop-menu">
                     <nav class="home-links">
                         <span>About</span>
@@ -53,11 +53,20 @@
                             </div>
                         </div>
                         <nav class="home-links1">
-                            <span class="home-nav11">About</span>
-                            <span class="home-nav21">Features</span>
-                            <span class="home-nav31">Pricing</span>
-                            <span class="home-nav41">Team</span>
-                            <span class="home-nav51">Blog</span>
+                            <nav class="home-links1">
+                                <span class="home-nav11">
+                                    <a href = "" style="text-decoration: none; color: purple">About</a>
+                                </span>
+                                <span class="home-nav21">
+                                    <a href = "" style="text-decoration: none; color: purple">Features</a>
+                                </span>
+                                <span class="home-nav31">
+                                    <a href = "" style="text-decoration: none; color: purple">Pricing</a>
+                                </span>
+                                <span class="home-nav41">
+                                    <a href = "" style="text-decoration: none; color: purple">Team</a>
+                                </span>
+                            </nav>
                         </nav>
                         <div class="home-buttons1">
                             <button class="home-login1 button">Login</button>
@@ -88,17 +97,18 @@
         <div class="container">
             <div class="signup-content">
                 <div class="signup-img">
+                    <img src="images/form-img.jpg" alt="">
                     <div class="signup-img-content">
-                        <h2>HR Report </h2>
+                        <h2>Financial Report </h2>
                         <p>Be more specific to make most of it.</p>
                     </div>
                 </div>
                 <div class="signup-form">
-                    <form method="POST" class="register-form" id="register-form">
+                    <form method="POST" onsubmit="handleSubmit();" class="register-form" id="register-form">
                         <div class="form-row">
                             <div class="form-group">
                                 <div class="form-input">
-                                    <label for="first_name" class="required">Investor name</label>
+                                    <label for="first_name" class="required">Brand name</label>
                                     <input type="text" name="first_name" id="first_name" />
                                 </div>
                                 <div class="form-input">
@@ -106,78 +116,71 @@
                                     <input type="text" name="last_name" id="last_name" />
                                 </div>
                                 <div class="form-input">
-                                    <label for="company" class="required">Investor ID</label>
-                                    <input type="text" name="company" id="company" />
-                                </div>
-                                <div class="form-input">
                                     <label for="email" class="required">Email</label>
                                     <input type="text" name="email" id="email" />
                                 </div>
+                               <div class="form-input">
+                                    <label for="company" class="required">Goal</label>
+                                    <input type="text" name="company" id="goal" />
+                                </div>
                                 <div class="form-input">
-                                    <label for="Juridistion" class="required">Juridistion</label>
-                                    <input type="text" name="Juridistion" id="Juridistion" />
+                                    <label for="Juridistion" class="required">Objective</label>
+                                    <input type="text" name="Juridistion" id="obj" />
                                 </div>
                             </div>
                             <div class="form-group">
                                 <div class="form-select">
                                     <div class="label-flex">
-                                        <label for="meal_preference">Investment Type</label>
+                                        <label for="meal_preference">Analytics Type</label>
                                         <a href="#" class="form-link">Types </a>
                                     </div>
                                     <div class="select-list">
                                         <select name="meal_preference" id="meal_preference">
-                                            <option value="Equity">Equity</option>
-                                            <option value="Debt">Debt</option>
-                                            <option value="Mixed">Mixed</option>
+                                            <option value="Equity">Yearly</option>
+                                            <option value="Debt">Monthly</option>
+                                            <option value="Mixed">BiYearly</option>
                                         </select>
                                     </div>
                                 </div>
                                 <div class="form-radio">
                                     <div class="label-flex" class="required">
-                                        <label for="payment">Payment Mode</label>
+                                        <label for="payment">ADE Mode</label>
                                         <a href="#" class="form-link">Payment Detail</a>
                                     </div>
                                     <div class="form-radio-group">
                                         <div class="form-radio-item">
                                             <input type="radio" name="payment" id="cash" checked>
-                                            <label for="cash">Cash</label>
+                                            <label for="cash">SIV</label>
                                             <span class="check"></span>
                                         </div>
                                         <div class="form-radio-item">
                                             <input type="radio" name="payment" id="cheque">
-                                            <label for="cheque">Cheque</label>
+                                            <label for="cheque">FZ</label>
                                             <span class="check"></span>
                                         </div>
                                         <div class="form-radio-item">
                                             <input type="radio" name="payment" id="demand">
-                                            <label for="demand">Demand Draf</label>
+                                            <label for="demand">SDS</label>
                                             <span class="check"></span>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="form-input">
-                                    <label for="chequeno">DD / Cheque No.</label>
+                                    <label for="chequeno">VSK No.</label>
                                     <input type="text" name="chequeno" id="chequeno" />
                                 </div>
                                 <div class="form-input">
-                                    <label for="blank_name">Drawn on ( Bank Name)</label>
+                                    <label for="blank_name">Drawn on</label>
                                     <input type="text" name="blank_name" id="blank_name" />
                                 </div>
                                 <div class="form-input">
-                                    <label for="payable">Payable at</label>
+                                    <label for="payable">Lite at</label>
                                     <input type="text" name="payable" id="payable" />
                                 </div>
                             </div>
                         </div>
-                        <div class="donate-us">
-                            <label>Investment Amount</label>
-                            <div class="price_slider ui-slider ui-slider-horizontal">
-                                <div id="slider-margin"></div>
-                                <span class="donate-value" id="value-lower"></span>
-                            </div>
-                        </div>
                         <div class="form-submit">
-                            <input type="submit" value="Submit" class="submit" id="submit" name="submit" />
+                            <input type="button" onclick="handleSubmit();" value="Submit" class="submit" id="submit" name="submit" />
                             <input type="submit" value="Reset" class="submit" id="reset" name="reset" />
                         </div>
                     </form>
@@ -223,5 +226,11 @@
         </defs>
     </svg>
 </body>
-
+<script>
+    function handleSubmit(){
+        const obj = document.getElementById('obj').value;
+        const goal = document.getElementById('goal').value;
+        window.location = "../charts/index.html?o="+obj+"&g="+goal+"&t=HR Report&l1=ADK&l2=SDS";
+    }
+</script>
 </html>

@@ -1,0 +1,80 @@
+.con {
+  display: flex;
+  height: 100%;
+  min-width: 50%;
+  flex-direction: column;
+  background: white;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+.container {
+  padding: 5rem;
+  display: flex;
+  flex-direction: column;
+  column-gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.charts {
+  display: flex;
+  flex-direction: row;
+  column-gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+#c1 a:link,
+a:visited {
+  color: #4682b4;
+}
+
+#c1 a:hover {
+  color: #4169e1;
+}
+
+#c1 {
+  width: 800px;
+  height: 500px;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+#pie-chart {
+  width: 500px;
+  height: 250px;
+  position: relative;
+}
+
+#pie-chart::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 120px;
+  height: 115px;
+  left: 315px;
+  top: 0;
+  background: #fafafa;
+  box-shadow: 1px 1px 0 0 #ddd;
+}
+
+#pie-chart::after {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 260px;
+  left: 70px;
+  width: 170px;
+  height: 2px;
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  box-shadow: 0 0 3px 4px rgba(0, 0, 0, 0.1);
+}
